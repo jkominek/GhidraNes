@@ -27,6 +27,10 @@ public abstract class NesMapper {
 			return new MMC4Mapper();
 		case 19:
 			return new Mapper019();
+		case 94:
+			return new UxROMMapper();
+                case 180:
+                        return new UNROM180Mapper();
 		default:
 			throw new UnimplementedNesMapperException(mapperNum);
 		}
